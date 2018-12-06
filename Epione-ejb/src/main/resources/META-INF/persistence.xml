@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="Epione-ejb">
+		<jta-data-source>java:/MySqlDS</jta-data-source>
+		<class>Model.Appointment</class>
+		<class>Model.AspNetUserLogin</class>
+		<class>Model.AspNetUserLoginPK</class>
+		<class>Model.AspNetUserRole</class>
+		<class>Model.AspNetUserRolePK</class>
+		<class>Model.Availibility</class>
+		<class>Model.CustomRole</class>
+		<class>Model.CustomUserClaim</class>
+		<class>Model.CustomUserLogin</class>
+		<class>Model.CustomUserRole</class>
+		<class>Model.Discussion</class>
+		<class>Model.Event</class>
+		<class>Model.MedicalRecord</class>
+		<class>Model.Message</class>
+		<class>Model.Notification</class>
+		<class>Model.QuestionInfo</class>
+		<class>Model.ReponseInfo</class>
+		<class>Model.Skill</class>
+		<class>Model.Speciality</class>
+		<class>Model.Suggestion</class>
+		<class>Model.User</class>
+		<properties>
+			<property name="hibernate.hbm2ddl.auto" value="create-drop"/>
+		</properties>
+	</persistence-unit>
+</persistence>
